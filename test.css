@@ -1,0 +1,598 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Angkor&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Angkor", serif;
+}
+.manu{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    padding: 0px 30px;
+    z-index: 99;
+    top: 0;
+    position: sticky;
+}
+.manu .logo{
+    width: 20%;
+    height: 100%;
+    /* background-color: aqua; */
+    align-items: center;
+    display: flex;
+}
+.logo img{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+.manu .link{
+    width: 70%;
+    height: 100%;
+    /* background-color: blue; */
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+}
+.link ul{
+    display: flex;
+}
+.link ul li{
+    list-style-type: none;
+}
+.link ul li a{
+    text-decoration: none;
+    margin-right: 40px;
+    color: aliceblue;    
+    position: relative;
+    font-size: 25px;
+}
+.link ul li a::before{
+    content: "";
+    position: absolute;
+    bottom:  -8px;
+    width: 0;
+    height: 5px;
+    background-color: rgb(216, 213, 213);
+}
+.link ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    width: 0;
+    height: 5px;
+    right: 0;
+    background-color: rgb(241, 14, 14);
+}
+.link ul li a:hover:before{
+    width: 50%;
+    transition: all 0.5s;
+}
+.link ul li a:hover:after{
+    width: 50%;
+    transition: all 0.5s;
+}
+.manu .icons{
+    width: 10%;
+    height: 100%;
+    /* background-color: rgb(173, 17, 25); */
+    align-items: center;
+    display: flex;
+    justify-content: right ;
+}
+.icons i{
+    font-size: 30px;
+    color: aliceblue;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(13, 13, 14, 0.534);
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.banner .text{
+    width: 40%;
+    /* background-color: aqua; */
+    top: 26%;
+    position: absolute;
+    left: 2%;
+}
+.text h1{
+    font-size: 50px;
+    color: aliceblue;
+}
+.text ul{
+    display:flex ;
+    font-size: 30px;
+}
+.text ul li{
+    margin-right: 40px;
+    list-style-type: square;
+    color: white;
+    margin-right: 50px;
+}
+.text ul li a{
+    text-decoration: none;
+    color: white;
+}
+.text button[type="button"]{
+    width: 150px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 20px;
+    border: none;
+    margin-top: 20px;
+}
+#b1{
+    background-color: rgba(100, 5, 5, 0.144);
+    color: white;
+}
+#b2{
+    background-color: rgb(77, 74, 74);
+    color: white;
+}
+#b1:hover{
+    background-color: rgba(0, 0, 0, 0.562);
+    border: 1px solid white;
+    transition: all 0.5s;
+
+}
+#b2:hover{
+    background-color: rgb(131, 8, 8);
+    transition: all 0.5s;
+}
+.container{
+    width: 100%;
+    height: 200px;
+    padding: 30px 40px;
+    display: flex;
+}
+.container .left{
+    width: 23%;
+    height: 450px;
+    /* background-color: blueviolet; */
+}
+.left h3{
+    padding: 0px 30px;
+    margin-top: 23%;
+    font-size: 30px;
+    position: relative;
+}
+.left h3::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.603);
+    bottom: -5px;
+}
+.container .right{
+    width: 70%;
+    height: 450px;
+    /* background-color: rgb(172, 11, 38); */
+    display: flex;
+}
+.right .box1{
+    width: 31%;
+    height: 100%
+    margin-right: 30px;
+}
+.box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-left: 0px;
+}
+.than{
+    width: 100%;
+    height: 650px;
+    /* background-color: rgb(225, 225, 226); */
+    padding: 30px 40px;
+    display: flex;
+}
+.than .bleft{
+    width: 24%;
+    height: 500px;
+    background-color: rgb(239, 241, 241);
+    margin-top: 300px;
+}
+.bleft h1{
+    font-size: 30px;
+    margin-top: 35%;
+    padding: 0 30px;
+    position: relative;
+}
+.bleft h1::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(15, 15, 15, 0.699);
+    width: 50px;
+    height: 5px;
+    bottom: -5px;
+}
+.than .bright{
+    width: 100%;
+    height: 500px;
+    margin-top: 300px;
+    /* background-color: rgb(158, 29, 126); */
+    display: flex;
+    justify-content: space-between;
+}
+.bright .p{
+    width: 30%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.p .pic{
+    width: 100%;
+    height: 50%;
+}
+.p .tital{
+    width: 100%;
+    height: 25%;
+}
+.p .tital p{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.p .tital p:hover{
+    color: red;
+}
+.p .tital p a{
+    text-decoration: none;
+}
+.p .tital p a:hover{
+    text-decoration: underline;
+}
+.p .profile{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+.p .profile .l{
+    width: 20%;
+    height: 100%;
+}
+.p .profile .l img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.p .profile .r{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin-left: 30px;
+}
+.p .profile .r p{
+    font-size: 20px; 
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;  
+}
+.pic img:hover{
+    transform: scale(1.1);
+}
+.bright .p .pic1{
+    width: 100%;
+    height: 50%;
+}
+.bright .p .pic1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.bright .p .pic1 img:hover{
+    transform: scale(1.1);
+}
+.p .tital1{
+    width: 100%;
+    height: 25%;
+}
+.p .tital1 p{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.p .tital1 p:hover{
+    color: red;
+}
+.p .tital1 p a{
+    text-decoration: none;
+}
+.p .tital1 p a:hover{
+    text-decoration: underline;
+}
+.p .pf1{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+.p .pf1 .le{
+    width: 20%;
+    height: 100%;
+}
+.p .pf1 .le img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.p .pf1 .ri{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin-left: 30px;
+}
+.p .pf1 .ri p{
+    font-size: 20px; 
+}
+.p .pic2{
+    width: 100%;
+    height: 50%;
+}
+.p .pic2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.p .pic2 img:hover{
+    transform: scale(1.1);
+}
+.p .tital2{
+    width: 100%;
+    height: 25%;
+}
+.p .tital2 p{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.p .tital2 p:hover{
+    color: red;
+}
+.p .tital2 p a{
+    text-decoration: none;
+}
+.p .tital2 p a:hover{
+    text-decoration: underline;
+}
+.p .pf2{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+.p .pf2 .lef{
+    width: 20%;
+    height: 100%;
+}
+.p .pf2 .lef img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.p .pf2 .rig{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin-left: 30px;
+}
+.p .pf2 .rig p{
+    font-size: 20px; 
+}
+.after{
+    width: 100%;
+    height: 90vh;
+    /* background-color: blue; */
+    margin-top: 190px;
+}
+.after .boxler{
+    width: 100%;
+    height: 20%;
+    /* background-color: aqua; */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.after .boxbelow{
+    width: 100%;
+    height: 80%;
+    /* background-color: brown; */
+    display: flex;  
+}
+.boxbelow .lef{
+    width: 65%;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0.733);
+    overflow: hidden;
+    position: relative ;
+    margin-right: 30px;
+}
+.lef img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lef:hover img{
+    transform: scale(1.1);
+}
+.tit{
+    width: 50%;
+    height: auto;
+    padding: 10px 50px;
+    position: absolute;
+    top: 35%;
+}
+.tit p{
+    color: rgb(219, 218, 218);
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.tit h1{
+    color: white;
+    font-size: 40px;
+}
+.tit h1:hover{
+    text-decoration: underline;
+}
+.boxbelow .rig{
+    width: 35%;
+    height: 100%;
+    /* background-color: blue; */
+    
+}
+.rig .p1{
+    width: 100%;
+    height: 48%;
+    background-color: rgba(7, 7, 7, 0.774);
+    overflow: hidden;
+    position: relative;
+}
+.p1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+}
+.p1:hover img{
+    transform: scale(1.1);
+}
+.titl{
+    width: 50%;
+    height: auto;
+    padding: 10px 50px;
+    position: absolute;
+    top: 35%;
+}
+.titl p{
+    color: rgb(219, 218, 218);
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.titl h1{
+    color: white;
+    font-size: 30px;
+}
+.titl h1:hover{
+    text-decoration: underline;
+}
+.rig .p2{
+    width: 100%;
+    height: 48%;
+    background-color: rgba(7, 7, 7, 0.781);
+    margin-top: 41px;
+    overflow: hidden;
+    position: relative;
+}
+.p2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.p2:hover img{
+    transform: scale(1.1);
+}
+.title{
+    width: 50%;
+    height: auto;
+    padding: 10px 50px;
+    position: absolute;
+    top: 35%;
+}
+.title p{
+    color: rgb(219, 218, 218);
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.title h1{
+    color: white;
+    font-size: 30px;
+}
+.title h1:hover{
+    text-decoration: underline;
+}
+.lasy{
+    width: 100%;
+    height: 60vh;
+    background-color: aliceblue;
+}
+.lasy .bo1{
+    width: 100%;
+    height: 30%;
+    /* background-color: aqua; */
+}
+.lasy .bo1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lasy .bo2{
+    width: 100%;
+    height: 70%;
+    background-color: rgb(221, 12, 12);
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.bo2 .b1{
+    width: 31%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.bo2 .b1 h2{
+    margin-left: 130px;
+    color: white;
+    font-size: 30px;
+}
+.bo2 .b1 h3{
+    margin-left: 130px;
+    margin-top: 50px;
+    color: white;
+    font-size: 20px;
+}
+.bo2 .b1 h3:hover{
+    text-decoration: underline;
+}
+.bo2 .b2{
+    width: 31%;
+    height: 100%;
+    /* background-color: rgb(54, 187, 14); */
+}
+.bo2 .b3{
+    width: 31%;
+    height: 100%;
+    /* background-color: rgb(168, 192, 33);  */
+}
+.b3 p:hover{
+    text-decoration: underline;
+}
+.last1{
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.last1 p{
+    margin-left: 100px;
+    font-size: 25px;
+}
